@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 10vw;
+    padding: 1rem;
+}
+
+.sideBar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid grey;
+}
+
+.sideBarSelection {
+    display: grid;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    gap: 1rem;
+    grid-template-columns: 2fr 8fr;
+}
+
+.sideBarButton {
+    position: absolute;
+    right: -1.5rem;
+    bottom: 50%;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid black;
+}
+
+.mainContent {
+    padding: 20px;
+}
