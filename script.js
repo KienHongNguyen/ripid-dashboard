@@ -1,9 +1,4 @@
-const menu = document.querySelector("#expand-icon")
-
+const menu = document.querySelector(".sideBarButton")
 menu.addEventListener("click", function() {
-    expandSideBar()
-})
-
-function expandSideBar() {
     document.querySelector("body").classList.toggle("short")
-}
+});

@@ -11,7 +11,7 @@ body {
     grid-template-rows: 1fr 9fr;
     width: 100vw;
     height: 100vh;
-    transition: all 0.5s;
+    transition: grid-template-columns 0.5s ease-in-out;
 }
 
 
@@ -22,16 +22,18 @@ body {
     grid-template-rows: 1fr 8fr 1fr;
     flex-direction: column;
     padding-left: 2rem;
+
     position: relative;
     align-items: start;
     border-right: solid grey;
+    transition: width 0.5s ease-in-out, padding-left 0.5s ease-in-out;
 }
 
 
 
 /* Short */
 .short .container {
-    grid-template-columns: 0.6fr 9.4fr;
+    grid-template-columns: 0.5fr 9.5fr;
 }
 .short .sideBar{
     padding-left: 0.5rem;
@@ -46,20 +48,18 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.short .userAvatar {
-    width: 100%;
-}
 
 /* Short Display None */
-.short .menuText {
-    display: none;
+.short .menuText,
+.short .userEmail,
+.short .fa-ellipsis,
+.short .userAvatar {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
 }
-.short .userEmail {
-    display: none;
-}
-.short .fa-ellipsis {
-    display: none;
-}
+
+
 
 .short .sideBarButton {
     transform: rotate(180deg);
