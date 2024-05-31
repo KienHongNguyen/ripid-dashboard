@@ -11,6 +11,7 @@ body {
     grid-template-rows: 1fr 9fr;
     width: 100vw;
     height: 100vh;
+    transition: all 0.5s;
 }
 
 
@@ -20,11 +21,48 @@ body {
     display: grid;
     grid-template-rows: 1fr 8fr 1fr;
     flex-direction: column;
-
     padding-left: 2rem;
     position: relative;
     align-items: start;
     border-right: solid grey;
+}
+
+
+
+/* Short */
+.short .container {
+    grid-template-columns: 0.6fr 9.4fr;
+}
+.short .sideBar{
+    padding-left: 0.5rem;
+    text-align: center;
+}
+.short .fa-brands {
+    margin-left: 0;
+    text-align: center;
+}
+.short .menuItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.short .userAvatar {
+    width: 100%;
+}
+
+/* Short Display None */
+.short .menuText {
+    display: none;
+}
+.short .userEmail {
+    display: none;
+}
+.short .fa-ellipsis {
+    display: none;
+}
+
+.short .sideBarButton {
+    transform: rotate(180deg);
 }
 
 /* Side Bar Logo */
@@ -37,15 +75,18 @@ body {
 
 /* Side Bar Selection */
 .sideBarSelection {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: 50vh;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 1.5rem;
-    column-gap: 1rem;
     row-gap: 2rem;
-    grid-template-columns: 2fr 8fr;
+}
+.menuItem {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 8.5fr;
+    font-size: 1.5rem;
 }
 
 /* Side Bar User */
@@ -79,6 +120,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     border: solid black;
+    transition: all 0.5s;
 }
 
 
@@ -91,8 +133,6 @@ body {
     justify-content: end;
     align-items: center;
 }
-
-
 .navBarButton {
     display: flex;
     align-items: center;
@@ -105,7 +145,6 @@ body {
     color: white;
     background-color: hsl(0, 0%, 0%);
 }
-
 .navBarDocs {
     display: flex;
     align-items: center;
@@ -116,7 +155,12 @@ body {
 /* Main Content */
 .mainContent {
     grid-column: 2/3;
-    padding: 20px;
+    padding-left: 5vw;
+    padding-top: 1vh;
 
     outline: solid blue;
+}
+
+.mainContent h1 {
+    font-size: 3rem;
 }
