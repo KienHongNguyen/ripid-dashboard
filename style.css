@@ -157,8 +157,7 @@ body {
     grid-column: 2/3;
     padding-left: 5vw;
     padding-top: 1vh;
-
-    outline: solid blue;
+    border-top: solid grey;
 }
 
 .mainContent h1 {
